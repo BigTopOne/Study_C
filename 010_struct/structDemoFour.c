@@ -42,9 +42,9 @@ int main()
 
 void printBook(struct Books book)
 {
-    char title = book.title;
-    char author = book.author;
-    char subject = book.subject;
+    char title = (char)book.title;
+    char author = (char)book.author;
+    char subject = (char)book.subject;
     int book_id = book.book_id;
-    printf("title %s,author %s,subject %s,book_id %s", title, author, subject, book_id);
+    printf("title %c,author %c,subject %c,book_id %d \n", title, author, subject, book_id);
 }

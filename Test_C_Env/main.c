@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /*
-* 指向结构的指针
+结构体 作为函数参数
 */
 struct Books {
   char title[50];
@@ -11,7 +11,7 @@ struct Books {
   int book_id;
 };
 
-void printBook(struct Books *book);
+void printBook(struct Books book);
 
 int main() {
   struct Books Book1; /* 声明 Book1，类型为 Books */
@@ -30,18 +30,19 @@ int main() {
   Book2.book_id = 6495700;
 
   /* 输出 Book1 信息 */
-  printBook(&Book1);
+  printBook(Book1);
 
   /* 输出 Book2 信息 */
-  printBook(&Book2);
+  printBook(Book2);
 
   return 0;
 }
 
-void printBook(struct Books *book) {
-  char *title = book->title;
-  char *author = book->author;
-  char *subject = book->subject;
-  int book_id = book->book_id;
-  printf("title: %s,author: %s,subject: %s,book_id: %d\n", title, author, subject, book_id);
+void printBook(struct Books book)
+{
+  char title = (char)book.title;
+  char author = (char)book.author;
+  char subject = (char)book.subject;
+  int book_id = book.book_id;
+  printf("title %c,author %c,subject %c,book_id %d \n", title, author, subject, book_id);
 }
