@@ -1,48 +1,34 @@
-
 #include <stdio.h>
 #include <string.h>
 /*
-结构体 作为函数参数
+* 共用体是一种特殊的数据类型，允许您在相同的内存位置存储不同的数据类型。
+*### 定义共用体####
+    union [union tag]
+    {
+    member definition;
+    member definition;
+    ...
+    member definition;
+    } [one or more union variables];
+
+union tag 是可选的，每个 member definition 是标准的变量定义，比如 int i; 或者 float f;
+或者其他有效的变量定义。在共用体定义的末尾，最后一个分号之前，您可以指定一个或多个共用体变量，这是可选的。下面
 */
-struct Books {
-  char title[50];
-  char author[50];
-  char subject[100];
-  int book_id;
-};
 
-void printBook(struct Books book);
+union Data // Data 变量存储一个整数，一个浮点数，一个字符串，在内存的相同位置，可以存储多个多种类型的书库
+{
 
-int main() {
-  struct Books Book1; /* 声明 Book1，类型为 Books */
-  struct Books Book2; /* 声明 Book2，类型为 Books */
+  int i;
+  float f;
+  char str[20];
 
-  /* Book1 详述 */
-  strcpy(Book1.title, "C Programming");
-  strcpy(Book1.author, "Nuha Ali");
-  strcpy(Book1.subject, "C Programming Tutorial");
-  Book1.book_id = 6495407;
+} data;
 
-  /* Book2 详述 */
-  strcpy(Book2.title, "Telecom Billing");
-  strcpy(Book2.author, "Zara Ali");
-  strcpy(Book2.subject, "Telecom Billing Tutorial");
-  Book2.book_id = 6495700;
-
-  /* 输出 Book1 信息 */
-  printBook(Book1);
-
-  /* 输出 Book2 信息 */
-  printBook(Book2);
+int main()
+{
+  union Data data;
+  printf("Memory size occupied by data: %d\n", sizeof(data));
+  // printf("Memory size occupied by data : %d\n", sizeof(data));
 
   return 0;
-}
-
-void printBook(struct Books book)
-{
-  char title = (char)book.title;
-  char author = (char)book.author;
-  char subject = (char)book.subject;
-  int book_id = book.book_id;
-  printf("title %c,author %c,subject %c,book_id %d \n", title, author, subject, book_id);
 }

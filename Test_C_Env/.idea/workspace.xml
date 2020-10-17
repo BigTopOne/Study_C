@@ -12,12 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6882a814-8bb5-40aa-90e3-7ca9a4ec5450" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../009_struct/structDemoFive.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../009_struct/structDemoFour.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../009_struct/structDemoSix.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../009_struct/structDemoThree.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../009_struct/structDemoTwo.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../009_struct/structDemo_one.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test_C_Env.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test_C_Env.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Test_C_Env" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Test_C_Env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -41,10 +38,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="42" column="32" lean-forward="true" selection-end-line="47" selection-end-column="1" />
+            <state relative-caret-position="537">
+              <caret line="24" column="7" lean-forward="true" selection-end-line="34" />
               <folding>
-                <element signature="e#1#19#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -176,7 +173,7 @@
     </factor>
     <factor id="completionFinishedType">
       <dailyData date="17-10-2020">
-        <observation name="cancelled" value="11.0" />
+        <observation name="cancelled" value="14.0" />
         <observation name="explicitSelect" value="3.0" />
       </dailyData>
     </factor>
@@ -187,7 +184,7 @@
     </factor>
     <factor id="completionUsage">
       <dailyData date="17-10-2020">
-        <observation name="count" value="14.0" />
+        <observation name="count" value="17.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:explicitProximity">
@@ -399,12 +396,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602860717407</updated>
-      <workItem from="1602860719156" duration="2234000" />
+      <workItem from="1602860719156" duration="2877000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2234000" />
+    <option name="totallyTimeSpent" value="2877000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
@@ -453,12 +450,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/secure/_string.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="42" column="32" lean-forward="true" selection-end-line="47" selection-end-column="1" />
+        <state relative-caret-position="537">
+          <caret line="24" column="7" lean-forward="true" selection-end-line="34" />
           <folding>
-            <element signature="e#1#19#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
