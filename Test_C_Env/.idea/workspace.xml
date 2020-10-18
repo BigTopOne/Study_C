@@ -12,10 +12,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6882a814-8bb5-40aa-90e3-7ca9a4ec5450" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compilerexplorer.settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test_C_Env.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test_C_Env.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test_C_Env.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test_C_Env.dir/main.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Test_C_Env" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Test_C_Env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c11_ union/unionDemoOne" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c11_ union/unionDemoOne.c" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +33,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor" />
@@ -38,10 +42,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="24" column="7" lean-forward="true" selection-end-line="34" />
+            <state relative-caret-position="312">
+              <caret line="130" lean-forward="true" selection-end-line="137" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#1#19#0" expanded="true" />
+                <element signature="e#1537#1575#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,7 +55,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/stdio.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="2535">
               <caret line="169" column="5" selection-start-line="169" selection-start-column="5" selection-end-line="169" selection-end-column="5" />
             </state>
           </provider>
@@ -69,20 +74,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/Test_C_Env.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-      </list>
-    </option>
-  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-1920" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectUserFactors">
@@ -90,107 +85,185 @@
       <dailyData date="17-10-2020">
         <observation name="false" value="2.0" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="false" value="36.0" />
+      </dailyData>
     </factor>
     <factor id="binaryFeature:liftShorterClasses">
       <dailyData date="17-10-2020">
         <observation name="UNDEFINED" value="2.0" />
+      </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="36.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:middleMatching">
       <dailyData date="17-10-2020">
         <observation name="false" value="2.0" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="false" value="36.0" />
+      </dailyData>
     </factor>
     <factor id="binaryFeature:nonGeneric">
       <dailyData date="17-10-2020">
         <observation name="UNDEFINED" value="2.0" />
+      </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="36.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_inResolveScope">
       <dailyData date="17-10-2020">
         <observation name="true" value="2.0" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="23.0" />
+        <observation name="false" value="4.0" />
+        <observation name="true" value="9.0" />
+      </dailyData>
     </factor>
     <factor id="binaryFeature:prox_openedInEditor">
       <dailyData date="17-10-2020">
         <observation name="true" value="2.0" />
+      </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="23.0" />
+        <observation name="false" value="6.0" />
+        <observation name="true" value="7.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameDirectory">
       <dailyData date="17-10-2020">
         <observation name="false" value="2.0" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="23.0" />
+        <observation name="false" value="9.0" />
+        <observation name="true" value="4.0" />
+      </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameLogicalRoot">
       <dailyData date="17-10-2020">
         <observation name="false" value="2.0" />
+      </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="23.0" />
+        <observation name="false" value="9.0" />
+        <observation name="true" value="4.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sdkOrLibrary">
       <dailyData date="17-10-2020">
         <observation name="false" value="2.0" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="23.0" />
+        <observation name="false" value="13.0" />
+      </dailyData>
     </factor>
     <factor id="binaryFeature:templates">
       <dailyData date="17-10-2020">
         <observation name="false" value="2.0" />
+      </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="false" value="36.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:accessible">
       <dailyData date="17-10-2020">
         <observation name="UNDEFINED" value="2.0" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="36.0" />
+      </dailyData>
     </factor>
     <factor id="categoricalFeature:expectedType">
       <dailyData date="17-10-2020">
         <observation name="UNDEFINED" value="2.0" />
+      </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="36.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:kind">
       <dailyData date="17-10-2020">
         <observation name="UNDEFINED" value="2.0" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="36.0" />
+      </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_groovyReferenceListWeigher">
       <dailyData date="17-10-2020">
         <observation name="UNDEFINED" value="2.0" />
+      </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="36.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_javaInheritance">
       <dailyData date="17-10-2020">
         <observation name="UNDEFINED" value="2.0" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="36.0" />
+      </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_referenceList">
       <dailyData date="17-10-2020">
         <observation name="UNDEFINED" value="2.0" />
+      </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="36.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:recursion">
       <dailyData date="17-10-2020">
         <observation name="UNDEFINED" value="2.0" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="36.0" />
+      </dailyData>
     </factor>
     <factor id="completionFinishedType">
       <dailyData date="17-10-2020">
-        <observation name="cancelled" value="14.0" />
+        <observation name="cancelled" value="15.0" />
         <observation name="explicitSelect" value="3.0" />
+      </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="cancelled" value="372.0" />
+        <observation name="explicitSelect" value="26.0" />
+        <observation name="typedSelect" value="10.0" />
       </dailyData>
     </factor>
     <factor id="completionType">
       <dailyData date="17-10-2020">
         <observation name="BASIC" value="2.0" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="BASIC" value="53.0" />
+      </dailyData>
     </factor>
     <factor id="completionUsage">
       <dailyData date="17-10-2020">
-        <observation name="count" value="17.0" />
+        <observation name="count" value="18.0" />
+      </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="count" value="408.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:explicitProximity">
       <dailyData date="17-10-2020">
         <observation name="average" value="0.0" />
         <observation name="count" value="3.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="average" value="0.0" />
+        <observation name="count" value="71.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -204,15 +277,28 @@
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="average" value="0.0" />
+        <observation name="count" value="71.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
     </factor>
     <factor id="doubleFeature:mostUsed">
       <dailyData date="17-10-2020">
         <observation name="UNDEFINED" value="2.0" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="36.0" />
+      </dailyData>
     </factor>
     <factor id="doubleFeature:nameEnd">
       <dailyData date="17-10-2020">
         <observation name="UNDEFINED" value="2.0" />
+      </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="36.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:position">
@@ -223,6 +309,13 @@
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.055556" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="average" value="0.140845" />
+        <observation name="count" value="71.0" />
+        <observation name="max" value="3.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.173815" />
+      </dailyData>
     </factor>
     <factor id="doubleFeature:prefix">
       <dailyData date="17-10-2020">
@@ -231,6 +324,13 @@
         <observation name="max" value="-1152.0" />
         <observation name="min" value="-1152.0" />
         <observation name="variance" value="0.0" />
+      </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="average" value="-1157.802817" />
+        <observation name="count" value="71.0" />
+        <observation name="max" value="-1102.0" />
+        <observation name="min" value="-1253.0" />
+        <observation name="variance" value="481.116168" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:priority">
@@ -241,15 +341,28 @@
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="average" value="11.830986" />
+        <observation name="count" value="71.0" />
+        <observation name="max" value="150.0" />
+        <observation name="min" value="-10.0" />
+        <observation name="variance" value="1450.294427" />
+      </dailyData>
     </factor>
     <factor id="doubleFeature:prox_explicitlyImported">
       <dailyData date="17-10-2020">
         <observation name="UNDEFINED" value="2.0" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="36.0" />
+      </dailyData>
     </factor>
     <factor id="doubleFeature:prox_knownElement">
       <dailyData date="17-10-2020">
         <observation name="UNDEFINED" value="2.0" />
+      </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="36.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_sameModule">
@@ -260,16 +373,34 @@
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="23.0" />
+        <observation name="average" value="0.8" />
+        <observation name="count" value="25.0" />
+        <observation name="max" value="2.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.564351" />
+      </dailyData>
     </factor>
     <factor id="doubleFeature:prox_samePsiMember">
       <dailyData date="17-10-2020">
         <observation name="UNDEFINED" value="2.0" />
+      </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="36.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:query_length">
       <dailyData date="17-10-2020">
         <observation name="average" value="0.0" />
         <observation name="count" value="3.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="average" value="0.0" />
+        <observation name="count" value="71.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -283,20 +414,36 @@
         <observation name="min" value="6.0" />
         <observation name="variance" value="0.0" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="average" value="6.0" />
+        <observation name="count" value="71.0" />
+        <observation name="max" value="11.0" />
+        <observation name="min" value="3.0" />
+        <observation name="variance" value="3.620566" />
+      </dailyData>
     </factor>
     <factor id="doubleFeature:sameWords">
       <dailyData date="17-10-2020">
         <observation name="UNDEFINED" value="2.0" />
+      </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="36.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:shorter">
       <dailyData date="17-10-2020">
         <observation name="UNDEFINED" value="2.0" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="36.0" />
+      </dailyData>
     </factor>
     <factor id="doubleFeature:simple">
       <dailyData date="17-10-2020">
         <observation name="UNDEFINED" value="2.0" />
+      </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="36.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sorter">
@@ -307,10 +454,20 @@
         <observation name="min" value="1.0" />
         <observation name="variance" value="0.0" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="average" value="1.0" />
+        <observation name="count" value="71.0" />
+        <observation name="max" value="1.0" />
+        <observation name="min" value="1.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
     </factor>
     <factor id="doubleFeature:statics">
       <dailyData date="17-10-2020">
         <observation name="UNDEFINED" value="2.0" />
+      </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="UNDEFINED" value="36.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:stats">
@@ -321,11 +478,23 @@
         <observation name="min" value="0.0" />
         <observation name="variance" value="5555555.555556" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="average" value="2393.15493" />
+        <observation name="count" value="71.0" />
+        <observation name="max" value="10000.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="12847735.388084" />
+      </dailyData>
     </factor>
     <factor id="itemPosition">
       <dailyData date="17-10-2020">
         <observation name="0" value="1.0" />
         <observation name="1" value="2.0" />
+      </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="0" value="23.0" />
+        <observation name="1" value="2.0" />
+        <observation name="3" value="1.0" />
       </dailyData>
     </factor>
     <factor id="mnemonicsUsage">
@@ -333,20 +502,38 @@
         <observation name="total" value="2.0" />
         <observation name="withMnemonics" value="0.0" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="total" value="22.0" />
+        <observation name="withMnemonics" value="4.0" />
+      </dailyData>
     </factor>
     <factor id="prefixLength">
       <dailyData date="17-10-2020">
         <observation name="0" value="1.0" />
         <observation name="2" value="2.0" />
       </dailyData>
+      <dailyData date="18-10-2020">
+        <observation name="1" value="4.0" />
+        <observation name="2" value="8.0" />
+        <observation name="3" value="10.0" />
+        <observation name="4" value="2.0" />
+        <observation name="5" value="1.0" />
+        <observation name="6" value="1.0" />
+      </dailyData>
     </factor>
-    <factor id="timeBetweenTyping" />
+    <factor id="timeBetweenTyping">
+      <dailyData date="18-10-2020">
+        <observation name="average" value="616.352941" />
+        <observation name="count" value="51.0" />
+      </dailyData>
+    </factor>
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -358,7 +545,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,60 +582,51 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602860717407</updated>
-      <workItem from="1602860719156" duration="2877000" />
+      <workItem from="1602860719156" duration="3489000" />
+      <workItem from="1602992694273" duration="3192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2877000" />
+    <option name="totallyTimeSpent" value="6681000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16986156" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17155068" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="CMake" />
-      <window_info anchor="bottom" id="Tail" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Messages" weight="0.109644674" />
-      <window_info anchor="bottom" id="Terminal" weight="0.4426396" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18680203" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31099477" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="make" />
-      <window_info anchor="right" id="PlantUML" />
-      <window_info anchor="right" id="Word Book" side_tool="true" />
-      <window_info anchor="right" id="Compiler Explorer" side_tool="true" />
-      <window_info anchor="right" id="Key Promoter X" />
-      <window_info anchor="right" id="Json Parser" />
+      <window_info anchor="bottom" id="Tail" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.4712042" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.4426396" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="CMake" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Json Parser" order="3" />
+      <window_info anchor="right" id="Word Book" order="4" side_tool="true" />
+      <window_info anchor="right" id="PlantUML" order="5" />
+      <window_info anchor="right" id="Compiler Explorer" order="6" side_tool="true" weight="0.32967034" />
+      <window_info anchor="right" id="make" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Key Promoter X" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/stdio.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="169" column="5" selection-start-line="169" selection-start-column="5" selection-end-line="169" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/secure/_string.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
@@ -457,12 +634,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/stdio.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2535">
+          <caret line="169" column="5" selection-start-line="169" selection-start-column="5" selection-end-line="169" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/__clang_cuda_cmath.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="259" column="47" selection-start-line="259" selection-start-column="47" selection-end-line="259" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="24" column="7" lean-forward="true" selection-end-line="34" />
+        <state relative-caret-position="312">
+          <caret line="130" lean-forward="true" selection-end-line="137" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#1#19#0" expanded="true" />
+            <element signature="e#1537#1575#0" expanded="true" />
           </folding>
         </state>
       </provider>

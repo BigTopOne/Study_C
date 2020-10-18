@@ -69,10 +69,10 @@ __STDC__	| 当编译器以 ANSI 标准编译时，则定义为 1。
  * */
 
 #define message_for(a, b) \
-   printf(#a" and "#b": we love you!\n")
+    printf(#a " and " #b ": we love you!\n")
 
 // 标记粘贴运算符（##)-->宏定义内的标记粘贴运算符（##）会合并两个参数。它允许在宏定义中两个独立的标记被合并为一个标记
-#define token_poster(n) printf("token"#n" = %d",token##n)
+#define token_poster(n) printf("token" #n " = %d", token##n)
 
 // #if !defined (MESSAGE)  和ifndef MESSAGE 是一个意思
 #ifndef MESSAGE
@@ -80,7 +80,7 @@ __STDC__	| 当编译器以 ANSI 标准编译时，则定义为 1。
 #endif
 
 // 参数化的宏,,哈哈哈用宏求平方
-#define square(x) (pow(x,2))
+#define square(x,y) (pow(x, y))
 
 /*
 *测试预定义宏
@@ -91,47 +91,52 @@ void showSplitLine();
 void test_token_poster();
 void test_defined();
 void test_square();
-int main(int argc, char const *argv[]) {
+int main(int argc, char const *argv[])
+{
 
-  testPreMacros();
-  showSplitLine();
-  test_message_for();
-  showSplitLine();
-  test_token_poster();
-  showSplitLine();
-  test_defined();
-  showSplitLine();
-  test_square();
+    testPreMacros();
+    showSplitLine();
+    test_message_for();
+    showSplitLine();
+    test_token_poster();
+    showSplitLine();
+    test_defined();
+    showSplitLine();
+    test_square();
 
-  return 0;
+    return 0;
 }
 
-void showSplitLine() {
-  printf("-----------华丽的分割线--------------------\n");
+void showSplitLine()
+{
+    printf("-----------华丽的分割线--------------------\n");
 }
 
-void testPreMacros() {
-  printf("File:%s \n", __FILE__);
-  printf("Date :%s \n", __DATE__);
-  printf("Time :%s \n", __TIME__);
-  printf("Line :%d \n", __LINE__);
-  printf("ANSI :%d \n", __STDC__);
+void testPreMacros()
+{
+    printf("File:%s \n", __FILE__);
+    printf("Date :%s \n", __DATE__);
+    printf("Time :%s \n", __TIME__);
+    printf("Line :%d \n", __LINE__);
+    printf("ANSI :%d \n", __STDC__);
 }
-void test_message_for() {
-  message_for(Carole, Debra);
-}
-
-void test_token_poster() {
-  int token34 = 40;
-  token_poster(34);
+void test_message_for()
+{
+    message_for(Carole, Debra);
 }
 
-void test_defined() {
-  printf("Here is the message : %s\n", MESSAGE);
-
+void test_token_poster()
+{
+    int token34 = 40;
+    token_poster(34);
 }
-void test_square() {
-  printf("6 的平方 : %f\n", pow(6, 2));
-  printf("5 的平方 : %f\n", square(5));
 
+void test_defined()
+{
+    printf("Here is the message : %s\n", MESSAGE);
+}
+void test_square()
+{
+    printf("6 的平方 : %f\n", pow(6, 2));
+    printf("5 的平方 : %f\n", square(5,2));
 }
