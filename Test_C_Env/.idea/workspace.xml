@@ -42,7 +42,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="608">
               <caret line="130" lean-forward="true" selection-end-line="137" />
               <folding>
                 <element signature="e#1#19#0" expanded="true" />
@@ -583,12 +583,12 @@
       <option name="presentableId" value="Default" />
       <updated>1602860717407</updated>
       <workItem from="1602860719156" duration="3489000" />
-      <workItem from="1602992694273" duration="3192000" />
+      <workItem from="1602992694273" duration="3494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6681000" />
+    <option name="totallyTimeSpent" value="6983000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -599,7 +599,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31099477" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31099477" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -653,7 +653,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
+        <state relative-caret-position="608">
           <caret line="130" lean-forward="true" selection-end-line="137" />
           <folding>
             <element signature="e#1#19#0" expanded="true" />
