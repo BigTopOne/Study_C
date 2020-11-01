@@ -1,118 +1,54 @@
+#include "stdio.h"
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-/*
- * https://www.cnblogs.com/plain8/p/8093052.html
- * */
-int min(int i, int len);
-void print_data(char string[20], int p_int[14], int len);
-void merge_sort_two(int p_int[], int length);
-void merge_sort(int arr[], int len);
+/**
+ * 指针和多维数组；
+ * 1：有什么关系？
+ * 2：为什么要了解他们的关系？
+ *
+ *
+ * 尝试以下的表达思路：
+ * int zipoo[4][2] = {
+ *                      {2, 4},
+ *                      {6, 8},
+ *                      {1, 3},
+ *                      {5, 7},
+ *                   };
+ * 理解以下表达式的思路：
+ * -----------------------------------------------------------------------------------
+ * |  zippo           |二维数组首元素的地址（每个元素都是内含两个 int类型元素的一维数组）       |
+ * -----------------------------------------------------------------------------------
+ * |  zippo+2         |二维数组的第三个元素（即一维数组）的地址                             |
+ * -----------------------------------------------------------------------------------
+ * |  *(zippo+2)+1    |二维数组的第 3 个元素（即一维数组）的首元素（一个 int 类型的值）地址    |
+ * -----------------------------------------------------------------------------------
+ * |                  |二维数组的第 3 个一维数组的第 2 个 int 类型元素的值，即数组的第 3 行， |
+ * |  *(*(zippo+2)+1) |第2列的值（zip[2][1]）                                          |
+ * |                  |                                                              |
+ * -----------------------------------------------------------------------------------
+ *
+ *
+ * @return
+ */
 int main() {
+  int zippo[4][2] = {
+      {2, 4},
+      {6, 8},
+      {1, 3},
+      {5, 7},
+  };
+  // 数组内部，要从 index 0 开始数；
+  printf("zippo    = %p,    zippo+1    = %p\n", zippo, zippo + 1);
+  printf("zippo[0] = %p ,   zippo[0]+1 = %p\n", zippo[0], zippo[0] + 1);
+  printf("*zippo   = %p,    *zippo + 1 = %p\n", *zippo, *zippo + 1);
+  printf("\n");
+  printf("zippo[0][0] =  %d\n", zippo[0][0]);
+  printf("*zippo[0]   =  %d\n", *zippo[0]);
+  printf("**zippo     =  %d\n", **zippo);
+  printf("\n");
+  printf("zippo[2][1]     =  %d\n", zippo[2][1]);
+  printf("*(*(zippo+2)+1) =  %d\n", *(*(zippo + 2) + 1));
 
-  int arr[] = {22, 34, 3, 32, 82, 55, 89, 50, 37, 5, 64, 35, 9, 70};
-  int len = sizeof(arr) / sizeof(arr[0]);
-
-  print_data("排序前：", arr, len);
-//  merge_sort(arr, len);
-  merge_sort_two(arr, len);
-
-  print_data("\n排序后：", arr, len);
+  printf("1的 16 进制：%p",1);
 
   return 0;
 }
-
-void print_data(char string[20], int arr[], int len) {
-  printf("%s : ", string);
-  for (int i = 0; i < len; i++) {
-    printf("%d  ", arr[i]);
-  }
-
-}
-
-int min(int x, int y) {
-  return x > y ? x : y;
-}
-
-void merge_sort(int arr[], int length) {
-  int step = 1; //归并区间步长
-  int l[length], r[length]; //gcc, 两个临时数组，分别保存待归并的两个区间
-  while (step < length) {
-    int start = 0; //归并区间的开始下标
-    while (start < length - step) {
-      //归
-      int len_l, len_r; //左右待归并区间的长度
-      len_l = len_r = step;
-      memcpy(l, arr + start, sizeof(int) * len_l);
-      if (start + 2 * step > length) {
-        len_r = length - start - step;
-      }
-      memcpy(r, arr + start + step, sizeof(int) * len_r);
-      //并
-      int i = 0, j = 0, k = start;
-      while (i < len_l && j < len_r) {
-        arr[k++] = l[i] < r[j] ? l[i++] : r[j++];
-      }
-      while (i < len_l) {
-        arr[k++] = l[i++];
-      }
-
-      start += 2 * step;
-    }
-    step *= 2;
-  }
-
-}
-
-void merge_sort_two(int arr[], int length) {
-  int step = 1;
-  int l[length], r[length];
-  while (step < length) {
-    int start = 0;
-    while (start < length - step) {
-      int len_l, len_r;
-      len_l = len_r = step;
-      memcpy(l, arr + start, sizeof(int) * len_l);
-      if (start + 2 * step > length) {
-        len_r = length - start - step;
-      }
-      memcpy(r, arr + start + step, sizeof(int) * len_r);
-      // 并
-      int i = 0, j = 0, k = start;
-      while (i < len_l && j < len_r) {
-        arr[k++] = l[i] < r[j] ? l[i++] : r[j++];
-      }
-      while (i < len_l) {
-        arr[k++] = l[i++];
-      }
-      start += 2 * step;
-
-    }
-    step *= 2;
-
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
