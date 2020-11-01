@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 enum
 {
     MON = 1,
@@ -26,10 +25,7 @@ void func3(int param[])
 {
 }
 
-double getA
-
-    int
-    main()
+int main()
 {
 
     return 0;
