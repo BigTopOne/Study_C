@@ -2,6 +2,7 @@
 
 int main()
 {
+    // const 修饰以后，不可变；
     const int LENGTH = 10;
     const int WIDTH = 5;
     const char NEWLINE = '\n';
