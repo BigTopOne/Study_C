@@ -1,54 +1,30 @@
 #include "stdio.h"
-
-/**
- * 指针和多维数组；
- * 1：有什么关系？
- * 2：为什么要了解他们的关系？
- *
- *
- * 尝试以下的表达思路：
- * int zipoo[4][2] = {
- *                      {2, 4},
- *                      {6, 8},
- *                      {1, 3},
- *                      {5, 7},
- *                   };
- * 理解以下表达式的思路：
- * -----------------------------------------------------------------------------------
- * |  zippo           |二维数组首元素的地址（每个元素都是内含两个 int类型元素的一维数组）       |
- * -----------------------------------------------------------------------------------
- * |  zippo+2         |二维数组的第三个元素（即一维数组）的地址                             |
- * -----------------------------------------------------------------------------------
- * |  *(zippo+2)+1    |二维数组的第 3 个元素（即一维数组）的首元素（一个 int 类型的值）地址    |
- * -----------------------------------------------------------------------------------
- * |                  |二维数组的第 3 个一维数组的第 2 个 int 类型元素的值，即数组的第 3 行， |
- * |  *(*(zippo+2)+1) |第2列的值（zip[2][1]）                                          |
- * |                  |                                                              |
- * -----------------------------------------------------------------------------------
- *
- *
- * @return
- */
+#include "unistd.h"
+#define  BUF_SIZE 30
 int main() {
-  int zippo[4][2] = {
-      {2, 4},
-      {6, 8},
-      {1, 3},
-      {5, 7},
-  };
-  // 数组内部，要从 index 0 开始数；
-  printf("zippo    = %p,    zippo+1    = %p\n", zippo, zippo + 1);
-  printf("zippo[0] = %p ,   zippo[0]+1 = %p\n", zippo[0], zippo[0] + 1);
-  printf("*zippo   = %p,    *zippo + 1 = %p\n", *zippo, *zippo + 1);
-  printf("\n");
-  printf("zippo[0][0] =  %d\n", zippo[0][0]);
-  printf("*zippo[0]   =  %d\n", *zippo[0]);
-  printf("**zippo     =  %d\n", **zippo);
-  printf("\n");
-  printf("zippo[2][1]     =  %d\n", zippo[2][1]);
-  printf("*(*(zippo+2)+1) =  %d\n", *(*(zippo + 2) + 1));
+  int fds1[1], fds2[2];
+  char str1[] = "who are you ?";
+  char str2[] = "Thank you for yout message.";
+  char buf[BUF_SIZE];
+  pid_t pid;
+  // 在管道上，还是有疑问；fds1[0]与 fds1[1]
+  pipe(fds1);
+  pipe(fds2);
+  pid = fork();
+  if (pid == 0) {
+    // 管道 1
+    write(fds1[1], str1, sizeof(str1));
 
-  printf("1的 16 进制：%p",1);
+    // 管道 2
+    read(fds2[0], buf, BUF_SIZE);
+    printf("Child proc output: %s \n", buf);
+
+  } else {
+    read(fds1[0], buf, BUF_SIZE);
+    printf("Parent proc output: %s \n", buf);
+    write(fds2[1], str2, sizeof(str2));
+
+  }
 
   return 0;
 }
