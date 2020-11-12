@@ -1,30 +1,43 @@
-#include "stdio.h"
+#include <stdio.h>
+#include "stdlib.h"
 #include "unistd.h"
+#include "sys/time.h"
+#include "sys/select.h"
 #define  BUF_SIZE 30
-int main() {
-  int fds1[1], fds2[2];
-  char str1[] = "who are you ?";
-  char str2[] = "Thank you for yout message.";
+
+/*
+ * 12.2 p:203
+ */
+int main(int argc, char *argv[]) {
+  fd_set reads, temps;
+  int result, str_len;
   char buf[BUF_SIZE];
-  pid_t pid;
-  // 在管道上，还是有疑问；fds1[0]与 fds1[1]
-  pipe(fds1);
-  pipe(fds2);
-  pid = fork();
-  if (pid == 0) {
-    // 管道 1
-    write(fds1[1], str1, sizeof(str1));
-
-    // 管道 2
-    read(fds2[0], buf, BUF_SIZE);
-    printf("Child proc output: %s \n", buf);
-
-  } else {
-    read(fds1[0], buf, BUF_SIZE);
-    printf("Parent proc output: %s \n", buf);
-    write(fds2[1], str2, sizeof(str2));
-
+  struct timeval timeout;
+  FD_ZERO(&reads);
+  // 0 is the stand input(console)
+  FD_SET(0, &reads);
+  /*
+   * timeout.tv_sec = 5;
+   * timeout.tv_usec = 5000;
+   * */
+  while (1) {
+    temps = reads;
+    timeout.tv_sec = 5;
+    timeout.tv_usec = 0;
+    result = select(1, &temps, 0, 0, &timeout);
+    if (result == -1) {
+      puts("selects() error !");
+    } else if (result == 0) {
+      puts("Time-outs");
+    } else {
+      if (FD_ISSET(0, &temps)) {
+        str_len = read(0, buf, BUF_SIZE);
+        buf[str_len] = 0;
+        printf("message from console : %s", buf);
+      }
+    }
   }
-
   return 0;
 }
+
+
